@@ -1,0 +1,16 @@
+
+
+@@media only screen and (min-width: 640px) {
+
+}
+
+.navTab{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#desktopNav{
+  width: 100%;
+}
