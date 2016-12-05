@@ -1,0 +1,1 @@
+// PORTFOLIO ASSIGNMENT THREE: This javascript page will contain the display handling function, depedning on the navigation link clicked or the navigation selectors on the "read more" section of the paragraphs, displaying the correct DOM elements.
