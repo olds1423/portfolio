@@ -14,7 +14,7 @@ Progress:
  - entered a paradoxical loop
 
 
-##Version 0.0.1
+##Version 0.0.1 :  Currently Deployed and Filled with Future Sudo Planned Coding
 
 User Stories/Goals -
 
@@ -30,7 +30,7 @@ As a developer, I want portfolio items displayed with a repeatable template, so 
 As a developer, I want my CSS organized (think SMACSS) so that I can find my stylings easily.
 
 
-##Version 0.0.3
+##Version 0.0.3 : Currently Planning Phase: Awaiting Implementation
 
 
 MVP - TODO:
@@ -46,3 +46,14 @@ MVP - TODO:
 Stretch Goals TODO:
 - As a reader, I want project descriptions truncated to the first paragraph on the main page but have a link to the additional projects folder that directs you to that specific project
 - As a reader, I want projects filterable by category so that I can review just the things that interest me. (ON THE PROJECTS PAGE)
+
+##Version 0.0.4 : Currently Planning Phase: Awaiting Implementation
+
+MVP - TODO:
+- As a developer, I want to use Handlebars for my project template, so that I can include new projects more easily.
+- As a developer, I want my CSS styles to follow SMACSS organization, so that I know where to look for creating and editing styles.
+
+Stretch Goals TODO:
+- As a visitor, I want the site to use great typography, so that I have an enjoyable reading experience.
+  - Set up your h1, h2, h3 elements according to a type scale.
+  - Include some good fonts, that work well together.
