@@ -5,7 +5,6 @@
 User Stories/Goals -
 1) To create a portfolio that takes into consideration the mobile first design aspect
 2) To display the portfolio in a functional and informational way that also presents additional style as the page is expanded to large client sizes
-3)  
 
 Progress:
  - created original wireframing files
@@ -21,13 +20,10 @@ User Stories/Goals -
 
 MVP -
 
-As a developer, I want my site to use valid and semantic markup so that employers will love me.
-
-As the creator, I want the page to link to my social and GitHub pages, so that visitors can follow me and I can build my audience.
-
-As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it and abstract out the details for individual projects.
-
-As a developer, I want my CSS organized (think SMACSS) so that I can find my stylings easily.
+- As a developer, I want my site to use valid and semantic markup so that employers will love me.
+- As the creator, I want the page to link to my social and GitHub pages, so that visitors can follow me and I can build my audience.
+- As a developer, I want portfolio items displayed with a repeatable template, so that I can reuse it and abstract out the details for individual projects.
+- As a developer, I want my CSS organized (think SMACSS) so that I can find my stylings easily.
 
 
 ##Version 0.0.3 : Currently Planning Phase: Awaiting Implementation
@@ -57,3 +53,23 @@ Stretch Goals TODO:
 - As a visitor, I want the site to use great typography, so that I have an enjoyable reading experience.
   - Set up your h1, h2, h3 elements according to a type scale.
   - Include some good fonts, that work well together.
+
+##Version 0.0.5 : Currently Planning Phase: Awaiting Implementation
+
+MVP - TODO:
+- DONE: review each others code and provide constructive feedback
+- Items identified and discussed with Dana
+  - add project filtering
+- remove multiple .html pages and change to a hide/show function on one HTML page
+Run data back into a constructor,
+- finish the handlebars.js compile
+- interesting background - explained idea of splitting projects section to expand with desktop view, Dana gave critique on the idea and implementation
+
+##Version 0.0.6 : Currently Planning Phase: Awaiting Implementation
+
+MVP - TODO:
+- As a developer, I want to store my project data in a .json file, so that I can keep it organized.
+- As a developer, I want to retrieve that source data file asynchronously, so that my app logic gets the data just when I need it.
+
+Stretch Goals:
+- As a reader, I only want to have to fetch data when it's updated (and keep it cached locally), so that I don't make unneeded AJAX calls.

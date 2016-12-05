@@ -1,5 +1,5 @@
 'use strict';
-
+// The contents below will be moved to a json file similar to the Articles content on the running assignment
 var storedProjects = [
   {
     projectTitle: 'Example of the Greatness',
