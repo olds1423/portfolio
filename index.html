@@ -14,7 +14,8 @@
     <ul>
       <li id="projectSummaryContent">{{projectSummary}}</li>
     </ul>
-    <p id="projectContent">{{project}}</p>
+    <p class="projectContent">{{project}}</p>
+    <p class="readMore">Read More..</p>
   </script>
   </article>
 </head>
@@ -26,14 +27,14 @@
     </section>
     <nav  id="desktopNav">
       <ul>
-        <li class="navTab" data-content="home" class="homeNav">Home</a></li>
-        <li class="navTab" data-content="aboutMe" class="aboutMeNav">About Me</a></li>
-        <li class="navTab" data-content="projects" clss="projectsNav">Projects</a></li>
+        <li class="navTab" data-home="home" id="homeNav">Home</a></li>
+        <li class="navTab" data-aboutMe="aboutMe" id="aboutMeNav">About Me</a></li>
+        <li class="navTab" data-projects="projects" id="projectsNav">Projects</a></li>
         <li class="navTab" data-content="gitHub"><a href="https://github.com/olds1423" target="_blank" class="icon-gitHub">GitHub Page</a></li>
       </ul>
     </nav>
   </header>
-  <section class="navSection" class="homeNav">
+  <section class="navSection" id="home">
     <!-- PORTFOLIO ASSIGNMENT THREE:This area below will show the first summary of a project, it will have a link to view more of the project will direct the JS to show the content currently contained in projects.html -->
     <section id="projects">
     </section>
@@ -41,7 +42,7 @@
       <h1>Skills should be here</h1>
     </section>
   </section>
-<section class="navSection" class="aboutMeNav">
+<section class="navSection" id="aboutMe">
     <h1>Short bio containg a moving story that will captivate readers</h1>
   <section>
     <h1>Favorite Hobbies</h2>

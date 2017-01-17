@@ -19,4 +19,5 @@ storedProjects.forEach(function(obj){
 
 projectHolder.forEach(function(project){
   $('#projects').append(project.compileProjects());
+  $('.projectContent').hide();
 })
