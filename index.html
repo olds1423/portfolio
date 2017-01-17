@@ -9,11 +9,12 @@
   <link rel="stylesheet" href="styles/layout.css">
 <script id="project-summary" type="text/x-handlebars-template">
   <article data-project="{{projectTitle}}" data-category="{{projectType}}">
-    <h1>{{projectTitle}}</h1>
+    <h1>{{title}}</h1>
     <h3>{{projectType}}</h3>
     <ul>
-      <li id="projectSummary">{{projectSummaryContent}}</li>
+      <li id="projectSummaryContent">{{projectSummary}}</li>
     </ul>
+    <p id="projectContent">{{project}}</p>
   </script>
   </article>
 </head>
@@ -33,22 +34,19 @@
     </nav>
   </header>
   <!-- PORTFOLIO ASSIGNMENT THREE:This area below will show the first summary of a project, it will have a link to view more of the project will direct the JS to show the content currently contained in projects.html -->
-<section id="projectTemplate">
-  <h1>Sweet Project</h1>
-  <h3>Cyberfuge</h3>
-  <ul>
-    <li id="projectSummary">Contents of the project</li>
-  </ul>
+<section id="projects">
 </section>
 <section>
   <h1>Skills should be here</h1>
 </section>
-<script src="data/projects.js"></script>
-<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts/projects.js"></script>
+<script src="scripts/app.js"></script>
 </body>
 
 </html>
 
 
 
-// TODO: combine all HTML pages onto this page using sections that have unique identifiers, these identifiers (ID for specific section) will be used in a the new pageView.js which will handle which page is being displayed
+<!-- // TODO: combine all HTML pages onto this page using sections that have unique identifiers, these identifiers (ID for specific section) will be used in a the new pageView.js which will handle which page is being displayed -->
