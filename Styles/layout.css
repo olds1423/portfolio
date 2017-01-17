@@ -3,7 +3,8 @@
 @@media only screen and (min-width: 640px) {
 
 }
-
+.projectContent{
+}
 .navTab{
   display: inline-flex;
   flex-direction: row;
@@ -11,10 +12,16 @@
   justify-content: space-around;
 }
 
+
 #desktopNav{
   display: flex;
   justify-content: space-around;
   min-height: 40px;
   background-color: #6d7993;
   width: 100%;
+  cursor: default;
+}
+
+#aboutMe{
+  display: none;
 }
