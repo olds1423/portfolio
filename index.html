@@ -26,23 +26,38 @@
     </section>
     <nav  id="desktopNav">
       <ul>
-        <li class="navTab" data-content="home"><a href="index.html" class="icon-home">Home</a></li>
-        <li class="navTab" data-content="aboutMe"><a href="aboutMe.html" class="icon-about">About Me</a></li>
-        <li class="navTab" data-content="projects"><a href="projects.html" class="icon-projects">Projects</a></li>
+        <li class="navTab" data-content="home" class="homeNav">Home</a></li>
+        <li class="navTab" data-content="aboutMe" class="aboutMeNav">About Me</a></li>
+        <li class="navTab" data-content="projects" clss="projectsNav">Projects</a></li>
         <li class="navTab" data-content="gitHub"><a href="https://github.com/olds1423" target="_blank" class="icon-gitHub">GitHub Page</a></li>
       </ul>
     </nav>
   </header>
-  <!-- PORTFOLIO ASSIGNMENT THREE:This area below will show the first summary of a project, it will have a link to view more of the project will direct the JS to show the content currently contained in projects.html -->
-<section id="projects">
-</section>
-<section>
-  <h1>Skills should be here</h1>
+  <section class="navSection" class="homeNav">
+    <!-- PORTFOLIO ASSIGNMENT THREE:This area below will show the first summary of a project, it will have a link to view more of the project will direct the JS to show the content currently contained in projects.html -->
+    <section id="projects">
+    </section>
+    <section>
+      <h1>Skills should be here</h1>
+    </section>
+  </section>
+<section class="navSection" class="aboutMeNav">
+    <h1>Short bio containg a moving story that will captivate readers</h1>
+  <section>
+    <h1>Favorite Hobbies</h2>
+      <ol>
+        <li>Climbing things</li>
+        <li>Looking at new things</li>
+        <li>Pondering old things</li>
+        <li>Finding new hobbies</li>
+      </ol>
+  </section>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="scripts/projects.js"></script>
 <script src="scripts/app.js"></script>
+<script src="scripts/navigation.js"></script>
 </body>
 
 </html>
