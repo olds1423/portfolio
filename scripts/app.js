@@ -1,4 +1,5 @@
-'use strict'
+
+(function(module) {
 var projectHolder = [ ];
 
 function Project(obj){
@@ -13,11 +14,33 @@ Project.prototype.compileProjects = function () {
   return compile(this);
 };
 
-storedProjects.forEach(function(obj){
+Project.prototype.makeProjectObjects = function () {
   projectHolder.push(new Project(obj));
-});
+};
 
-projectHolder.forEach(function(project){
-  $('#projects').append(project.compileProjects());
-  $('.projectContent').hide();
-})
+Project.storedProjects = function() {
+  if (localStorage.savedProjects) {
+    var locallyStoredProjects = JSON.parse(localStorage.getItem('savedProjects'));
+    Project.makeProjectObjects.forEach(locallyStoredProjects);
+    console.log(projectHolder);
+  } else {
+    $.getJSON('/data/data.json')
+    .done(function(data) {
+      Project.makeProjectObjects.forEach(data);
+      localStorage.setItem('savedProjects', JSON.stringify(data));
+    })
+  }
+};
+
+Project.storedProjects();
+
+// storedProjects.forEach(function(obj){
+//   projectHolder.push(new Project(obj));
+// });
+
+// projectHolder.forEach(function(project){
+//   $('#projects').append(project.compileProjects());
+//   $('.projectContent').hide();
+// })
+
+})(window);
