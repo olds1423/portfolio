@@ -1,46 +1,48 @@
 
 (function(module) {
-var projectHolder = [ ];
 
-function Project(obj){
-  this.title = obj.projectTitle
-  this.projectType = obj.projectType
-  this.projectSummary = obj.projectSummaryContent
-  this.project = obj.projectContent
-}
+  var projectHolder = [ ];
 
-Project.prototype.compileProjects = function () {
-  var compile = Handlebars.compile($('#project-summary').html());
-  return compile(this);
-};
-
-Project.prototype.makeProjectObjects = function () {
-  projectHolder.push(new Project(obj));
-};
-
-Project.storedProjects = function() {
-  if (localStorage.savedProjects) {
-    var locallyStoredProjects = JSON.parse(localStorage.getItem('savedProjects'));
-    Project.makeProjectObjects.forEach(locallyStoredProjects);
-    console.log(projectHolder);
-  } else {
-    $.getJSON('/data/data.json')
-    .done(function(data) {
-      Project.makeProjectObjects.forEach(data);
-      localStorage.setItem('savedProjects', JSON.stringify(data));
-    })
+  function Project(data){
+    this.title = data.projectTitle
+    this.projectType = data.projectType
+    this.projectSummary = data.projectSummaryContent
+    this.project = data.projectContent
   }
-};
 
-Project.storedProjects();
+  Project.prototype.compileProjects = function () {
+    var compile = Handlebars.compile($('#project-summary').html());
+    return compile(this);
+  };
 
-// storedProjects.forEach(function(obj){
-//   projectHolder.push(new Project(obj));
-// });
+  function makeProjectObjects() {
+    projectHolder.push(new Project());
+  }
 
-// projectHolder.forEach(function(project){
-//   $('#projects').append(project.compileProjects());
-//   $('.projectContent').hide();
-// })
+  Project.storedProjects = function() {
+    if (localStorage.savedProjects) {
+      var locallyStoredProjects = JSON.parse(localStorage.getItem('savedProjects'));
+      makeProjectObjects(locallyStoredProjects);
+      console.log(projectHolder);
+    } else {
+      $.getJSON('./data/data.json')
+      .done(function(data) {
+        makeProjectObjects(data);
+        console.log(projectHolder);
+        localStorage.setItem('savedProjects', JSON.stringify(data));
+      })
+    }
+  };
+
+  Project.storedProjects();
+
+  // storedProjects.forEach(function(obj){
+  //   projectHolder.push(new Project(obj));
+  // });
+
+  // projectHolder.forEach(function(project){
+  //   $('#projects').append(project.compileProjects());
+  //   $('.projectContent').hide();
+  // })
 
 })(window);
