@@ -15,8 +15,10 @@
     return compile(this);
   };
 
-  function makeProjectObjects() {
-    projectHolder.push(new Project());
+  function makeProjectObjects(data) {
+    data.forEach(function(data){
+      projectHolder.push(new Project(data));
+    })
   }
 
   Project.storedProjects = function() {
@@ -40,9 +42,9 @@
   //   projectHolder.push(new Project(obj));
   // });
 
-  // projectHolder.forEach(function(project){
-  //   $('#projects').append(project.compileProjects());
-  //   $('.projectContent').hide();
-  // })
+  projectHolder.forEach(function(project){
+    $('#projects').append(project.compileProjects());
+    $('.projectContent').hide();
+  })
 
 })(window);
